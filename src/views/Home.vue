@@ -128,7 +128,7 @@
   margin: 0 auto;
   right: 13%;
   top: 8%;
-  height: 30rem;
+  height: 37rem;
   width: 30rem;
   background-image: linear-gradient(
     to right,
