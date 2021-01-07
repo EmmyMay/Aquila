@@ -70,18 +70,20 @@
       }
     },
   async  mounted () {
+    // Making the api request to the endpoint
       let res =  await axios.get('https://hirng-X2021.glitch.me/api', {
         headers:{
           'Access-Control-Allow-Origin' : '*',
         }
       });
       this.name = res.data.name;
-      this.socialmedia = res.data.social_media;
-      console.log(this.socialmedia);
+      // this.socialmedia = res.data.social_media; setting the social media object to our data property
+     
 
     },
 
     methods: {
+      // This will load the icon files
        getUrl(url) {
         return require("../assets/" + url);
       }
@@ -172,5 +174,20 @@ box-shadow:         -2px 3px 24px -7px rgba(50, 50, 50, 0.75);
   width: 5rem;
   height: 5rem;
   margin-bottom: 2rem;
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 959px) {
+ .home_menus2{
+   
+   right: 8rem;
+ }
+}
+@media (min-width: 700px) and (max-width: 768px) {
+ .home_menus2{
+   
+   right: 6rem;
+ }
 }
 </style>
