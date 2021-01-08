@@ -13,12 +13,12 @@
       <div class="home_imgbox flex justify-center items-end">
         <img src="../assets/mainimg.png" alt="" class="home_mainimg" />
       </div>
-      <div class="menu_wrapper flex">
+      <div class="home_menu_wrapper flex">
         <ul class="home_menus1 w-9/12 flex justify-evenly">
           <li
             v-for="(menu, i) in menus"
             :key="i"
-            class="home_menu opacity-75 font-display font-light text-white"
+            class="home_menu1 opacity-75 font-display font-light text-white"
           >
             {{ menu }}
           </li>
@@ -28,7 +28,7 @@
           <li
             v-for="(menu, i) in menus2"
             :key="i"
-            class="home_menu opacity-75 font-display font-light text-white"
+            class="home_menu2 opacity-75 font-display font-light text-white"
           >
             {{ menu }}
           </li>
@@ -107,7 +107,6 @@
 
 .home__wrapper {
   position: absolute;
-
   height: 100%;
   width: 80%;
   top: 0;
@@ -119,7 +118,7 @@
   right: 11%;
   top: 2rem;
 }
-.menu_wrapper {
+.home_menu_wrapper {
   position: relative;
   top: 24%;
   height: 3rem;
@@ -189,5 +188,280 @@ box-shadow:         -2px 3px 24px -7px rgba(50, 50, 50, 0.75);
    
    right: 6rem;
  }
+}
+@media  (max-width: 370px) {
+
+  .home__wrapper{
+    
+    left: 10%;
+
+    
+  }
+  .home_imgbox{
+    width: 13rem;
+    height: 16rem;
+    top: 16%;
+    right: 0%;
+    
+  }
+  .home_icons{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+
+  
+  }
+
+  .home_title{
+    font-size: 1.3rem;
+    right: -5%;
+  }
+  .home_socials{
+    display: flex;
+    flex-direction: row;
+       top: 30%;
+    margin: 0 auto;
+  }
+  
+  .home_menu_wrapper{
+    
+    top: 26%;
+    left: 6%;
+
+  }
+  .home_menus1{
+    bottom: 0;
+    font-size: .7rem;
+    
+   
+  }
+
+  .home_menu1{
+    margin-right: .5rem;
+  }
+  .home_menus2{
+    bottom: 0;
+    right: 0;
+    font-size: .7rem;
+   
+  }
+  .home_avatar{
+    bottom: .5rem;
+  }
+}
+@media  (min-width: 375px) and (max-width: 413px) {
+
+  .home__wrapper{
+    
+    left: 10%;
+
+    
+  }
+  .home_imgbox{
+    width: 13rem;
+    height: 16rem;
+    top: 16%;
+    right: 0%;
+    
+  }
+  .home_icons{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+
+  }
+   .home_socials{
+    top: 30%;
+    margin: 0 auto;
+  }
+
+  .home_title{
+    font-size: 1.3rem;
+    right: -5%;
+  }
+  .home_socials{
+    display: flex;
+    flex-direction: row;
+  }
+  .home_menu_wrapper{
+    
+    top: 26%;
+    left: 6%;
+
+  }
+  .home_menus1{
+    bottom: 0;
+    font-size: .7rem;
+    
+   
+  }
+
+  .home_menu1{
+    margin-right: .5rem;
+  }
+  .home_menus2{
+    bottom: 0;
+    right: 0;
+    font-size: .7rem;
+   
+  }
+  .home_avatar{
+    bottom: 1rem;
+    left: .5rem;
+  }
+}
+@media  (min-width: 414px) and (max-width: 500px) {
+
+  .home__wrapper{
+    
+    left: 10%;
+
+    
+  }
+  .home_imgbox{
+    width: 13rem;
+    height: 16rem;
+    top: 16%;
+    right: 0%;
+    
+  }
+  .home_icons{
+    width: 2rem;
+    height: 2rem;
+     margin-right: 1rem;
+    }
+
+ .home_socials{
+    top: 30%;
+    margin: 0 auto;
+  }
+  .home_title{
+    font-size: 1.3rem;
+    right: -5%;
+  }
+  .home_socials{
+    display: flex;
+    flex-direction: row;
+  }
+  .home_menu_wrapper{
+    
+    top: 26%;
+    left: 6%;
+
+  }
+  .home_menus1{
+    bottom: 0;
+    font-size: .7rem;
+    
+   
+  }
+
+  .home_menu1{
+    margin-right: .5rem;
+  }
+  .home_menus2{
+    bottom: 0;
+    right: 0;
+    font-size: .7rem;
+   
+  }
+  .home_avatar{
+    bottom: 1rem;
+    left: .5rem;
+  }
+}
+@media  (min-width: 501px) and (max-width: 800px) {
+
+  .home__wrapper{
+    
+    left: 10%;
+
+    
+  }
+  .home_imgbox{
+    width: 13rem;
+    height: 16rem;
+    top: 16%;
+    right: 0%;
+    
+  }
+  .home_icons{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    
+   
+    margin-right: 1rem;
+  }
+
+  .home_socials{
+    top: 30%;
+    margin: 0 auto;
+  }
+
+  .home_title{
+    font-size: 1.3rem;
+    right: -5%;
+  }
+  .home_socials{
+    display: flex;
+    flex-direction: row;
+  }
+  .home_menu_wrapper{
+    
+    top: 26%;
+    left: 6%;
+
+  }
+  .home_menus1{
+    bottom: 0;
+    font-size: .7rem;
+    
+   
+  }
+
+  .home_menu1{
+    margin-right: .5rem;
+  }
+  .home_menus2{
+    bottom: 0;
+    right: 0;
+    font-size: .7rem;
+   
+  }
+  .home_avatar{
+    bottom: 2rem;
+    height: 5rem;
+    width: 5rem;
+    left: 2rem;
+  }
+}
+
+@media  (min-width: 800px) and (max-width: 959px){
+  .home_avatar{
+    width: 4.5rem;
+    height: 4.5rem;
+    left: 2rem;
+   
+  }
+  .home_menu_wrapper{
+    height: 2rem;
+    top: 12rem;
+    width: 80%;
+    left: 2rem;
+   
+  }
+   .home_menus2{
+    bottom: 0;
+    right: 0;
+    font-size: .9rem;
+   
+  }
+  .home_menus1{
+    bottom: 0;
+    right: 0;
+    font-size: .9rem;
+   
+  }
 }
 </style>
